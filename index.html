@@ -14,53 +14,116 @@
     />
     <link rel="stylesheet" href="style.css" />
 
-    <title>Hello, world!</title>
+    <title>Økogiflen</title>
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img class="logo" src="images/logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Om Økogiflen</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Følg med i vores univers</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <main>
+      <div id="hero">
+        <h1>ØKOGIFLEN</h1>
+        <h3>MEGET MERE END BARE EN SNACK</h3>
+      </div>
+
+      <div id="produkt">
+        <img src="images/1.jpg" alt="" />
+      </div>
+      <div id="faktabokse">
+        <div class="faktaboks øko">
+          <h4>ØKOLOGISK, ÆRLIGT OG BÆREDYGTIGT</h4>
+        </div>
+        <div class="faktaboks dadler">
+          <h4>VI ANVENDER KUN NATURLIGE INGREDIENSER</h4>
+        </div>
+        <div class="faktaboks vegansk">
+          <h4>100% PLANTEBASERET</h4>
+        </div>
+      </div>
+
       <div id="om_øko">
-        <img src="circle.png" alt="" />
+        <img src="images/carlo-villarica-j0RrjTHwwiI-unsplash.jpg" alt="" />
         <div id="om_øko_text">
           <h2 id="øko_header">OM ØKO GIFLEN</h2>
           <h3 id="øko_underheader">HVAD TROR VI PÅ?</h3>
-          <p id="øko_p"></p>
+          <p id="øko_p">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.”
+          </p>
         </div>
       </div>
       <div id="insta_carousel">
         <h2 id="insta_header">FØLG MED I VORES UNIVERS</h2>
         <p id="insta_handle">@øko_giflen</p>
         <div
-          id="carouselExampleControls"
-          class="carousel slide"
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide"
           data-bs-ride="carousel"
         >
           <div class="carousel-inner">
             <div class="carousel-item active">
               <ul>
-                <li><img src="square.jpg" alt="" /></li>
-                <li><img src="square.jpg" alt="" /></li>
-                <li><img src="square.jpg" alt="" /></li>
+                <li>
+                  <img src="images/1.jpg" alt="" />
+                </li>
+                <li><img src="images/8.jpg" alt="" /></li>
+                <li><img src="images/3.png" alt="" /></li>
               </ul>
             </div>
             <div class="carousel-item">
               <ul>
-                <li><img src="square.jpg" alt="" /></li>
-                <li><img src="square.jpg" alt="" /></li>
-                <li><img src="square.jpg" alt="" /></li>
+                <li><img src="images/4.png" alt="" /></li>
+                <li><img src="images/2.png" alt="" /></li>
+                <li><img src="images/6.png" alt="" /></li>
               </ul>
             </div>
             <div class="carousel-item">
               <ul>
-                <li><img src="square.jpg" alt="" /></li>
-                <li><img src="square.jpg" alt="" /></li>
-                <li><img src="square.jpg" alt="" /></li>
+                <li><img src="images/7.jpg" alt="" /></li>
+                <li><img src="images/5.png" alt="" /></li>
+                <li><img src="images/9.jpg" alt="" /></li>
               </ul>
             </div>
           </div>
           <button
             class="carousel-control-prev"
             type="button"
-            data-bs-target="#carouselExampleControls"
+            data-bs-target="#carouselExampleDark"
             data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -69,7 +132,7 @@
           <button
             class="carousel-control-next"
             type="button"
-            data-bs-target="#carouselExampleControls"
+            data-bs-target="#carouselExampleDark"
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -83,13 +146,28 @@
         <div id="contact">
           <ul>
             <li><h3>Kontaktinformation</h3></li>
-            <li></li>
-            <li></li>
+            <li>
+              <p>
+                Sandagervej 7
+                <br />
+                1466 København K <br />
+                Danmark
+              </p>
+            </li>
+            <li>
+              <p class="åbning">
+                <b>Telefon</b> +45 12345678
+                <br />
+                <b>Man-tors</b> 9:00 - 17:30
+                <br />
+                <b>Fredag</b> 9:00 - 16:30
+              </p>
+            </li>
           </ul>
         </div>
-        <img src="logo.png" alt="" id="logo_footer" />
+        <img src="images/logo.png" alt="" id="logo_footer" />
       </div>
-      <p>copyright ®</p>
+      <p class="copy">copyright ®</p>
     </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
