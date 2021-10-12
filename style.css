@@ -1,8 +1,6 @@
 /* -----------------BODY----------------- */
-
-/* change these */
-
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&family=Roboto:wght@300&display=swap");
+/* change these */
 
 * {
   box-sizing: border-box;
@@ -27,15 +25,32 @@ use the fonts in other ways in the font hierarchy etc. */
   --header-font: "Bebas Neue", sans-serif;
 
   --white-space: 2rem;
+
+  background-color: white;
+  cursor: url("images/gifel_cursor.png"), auto;
 }
 
 main {
   margin-bottom: 50px;
+  margin-top: 85px;
 }
 
-body {
-  background-color: white;
+h1,
+h2 {
+  font-family: var(--header-font);
+  font-size: 2.5rem;
 }
+
+h3,
+h4 {
+  font-family: var(--primary-font);
+  font-size: 1.4rem;
+}
+
+p {
+  font-family: var(--secondary-font);
+}
+
 /* -------------HEADER---------------- */
 
 .navbar {
@@ -51,6 +66,28 @@ div #navbarNav {
   flex-grow: 0;
 }
 
+.navbar-nav {
+  margin-right: 50px;
+}
+
+.nav-item {
+  font-family: var(--header-font);
+  color: #000;
+  font-size: 1.3rem;
+}
+
+.navbar-light .navbar-nav .nav-link.active:hover {
+  color: grey !important;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 /* ----------------HERO---------------- */
 
 #hero {
@@ -59,18 +96,34 @@ div #navbarNav {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font: var(--header-font) !important;
-  font-size: 2rem !important;
   color: white;
 }
 
 #hero h1 {
   text-align: center;
   padding-top: 18%;
+  border-bottom: white 2px solid;
+  width: 230px;
+  text-align: center;
+  margin: auto;
+  font-family: var(--header-font) !important;
+  font-size: 4rem !important;
+  text-shadow: black 0px 0px 4px;
 }
 
 #hero h3 {
   text-align: center;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  text-shadow: black 0px 0px 5px;
+}
+
+#hero_text {
+  margin: auto;
+  max-width: 500px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-size: 1.2rem;
 }
 
 /* --------------PRODUKT-------------- */
@@ -79,7 +132,8 @@ div #navbarNav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  box-shadow: grey 0px 0px 4px;
+  box-shadow: 5px 5px 6.2px rgba(0, 0, 0, 0.022);
+  overflow: hidden;
 }
 
 #produkt img {
@@ -104,7 +158,10 @@ div #navbarNav {
 .faktaboks {
   width: 350px;
   height: 250px;
-  box-shadow: grey 0px 0px 2px;
+  box-shadow: 5px 5px 6.2px rgba(0, 0, 0, 0.022),
+    8.6px 8.6px 12.3px rgba(0, 0, 0, 0.033),
+    10.7px 10.7px 18.3px rgba(0, 0, 0, 0.041),
+    11.7px 11.7px 24.7px rgba(0, 0, 0, 0.05);
   /* opacity: 0.5; */
   text-align: center;
   text-shadow: black 0px 0px 5px;
@@ -134,20 +191,23 @@ div #navbarNav {
 #om_øko {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin: auto;
   width: 70%;
   justify-content: space-evenly;
+  padding-top: 65px;
 }
 
 #om_øko_text {
   display: flex;
   flex-direction: column;
 
-  margin-top: 70px;
+  margin-top: 30px;
 }
 
 #om_øko img {
   max-width: 400px;
+  max-height: 400px;
   margin: 30px;
   border-radius: 50%;
   box-shadow: 5px 5px 6.2px rgba(0, 0, 0, 0.022),
@@ -160,6 +220,10 @@ div #navbarNav {
 
 /* --------------CAROUSEL-------------- */
 
+.carousel-inner {
+  overflow: visible !important;
+}
+
 .carousel-item ul {
   display: flex;
   flex-direction: row;
@@ -170,7 +234,10 @@ div #navbarNav {
 .carousel-item li img {
   width: 200px;
   height: 150px;
-  box-shadow: 0px 0px 2px grey;
+  box-shadow: 5px 5px 6.2px rgba(0, 0, 0, 0.022),
+    8.6px 8.6px 12.3px rgba(0, 0, 0, 0.033),
+    10.7px 10.7px 18.3px rgba(0, 0, 0, 0.041),
+    11.7px 11.7px 24.7px rgba(0, 0, 0, 0.05);
   object-fit: cover;
   cursor: pointer;
 }
@@ -185,7 +252,6 @@ div #navbarNav {
   padding-right: 200px;
   padding-bottom: 100px;
   padding-top: 100px;
-  /* box-shadow: 0px 0px 5px grey; */
 }
 
 /* -------------FOOTER-------------- */
