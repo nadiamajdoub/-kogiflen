@@ -119,10 +119,25 @@ div #navbarNav {
 }
 
 #hero_text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
   margin: auto;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+#hero_text img {
+  max-width: 200px;
+  max-height: 150px;
+}
+#hero_text p {
   max-width: 500px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin: 20px;
   font-size: 1.2rem;
 }
 
@@ -157,33 +172,61 @@ div #navbarNav {
 
 .faktaboks {
   width: 350px;
-  height: 250px;
+  height: 350px;
   box-shadow: 5px 5px 6.2px rgba(0, 0, 0, 0.022),
     8.6px 8.6px 12.3px rgba(0, 0, 0, 0.033),
     10.7px 10.7px 18.3px rgba(0, 0, 0, 0.041),
     11.7px 11.7px 24.7px rgba(0, 0, 0, 0.05);
   /* opacity: 0.5; */
-  text-align: center;
-  text-shadow: black 0px 0px 5px;
+  /* text-shadow: black 0px 0px 5px; */
   padding: 30px;
-  padding-top: 90px;
-  color: white;
+  color: rgb(34, 34, 34);
+  /* text-shadow: black 0px 0px 4px; */
+  will-change: background-image;
+}
+
+.faktaboks h4 {
+  font-family: var(--header-font);
+  font-size: 2rem;
+  padding-top: 110px;
+  text-align: center;
+}
+
+.faktaboks p {
+  margin-top: -195px;
+  opacity: 0;
+}
+
+.faktaboks:hover h4 {
+  opacity: 0;
+}
+
+.faktaboks:hover {
+  background-image: none;
+}
+
+.faktaboks:hover p {
+  opacity: 1;
 }
 
 .dadler {
-  background-image: url(images/dadler.jpg);
+  background-image: url(images/dadler.png);
   background-size: cover;
   background-position: center;
 }
 
 .øko {
-  background-image: url(images/field.jpg);
+  background-image: url(images/field.png);
   background-size: cover;
 }
 
 .vegansk {
-  background-image: url(images/bark.jpg);
+  background-image: url(images/bark.png);
   background-size: cover;
+}
+
+.vegansk p {
+  margin-top: -170px;
 }
 
 /* ----------OM ØKO GIFLEN------------ */
@@ -193,21 +236,22 @@ div #navbarNav {
   flex-direction: row;
   flex-wrap: wrap;
   margin: auto;
-  width: 70%;
   justify-content: space-evenly;
   padding-top: 65px;
+  max-width: 1100px;
 }
 
 #om_øko_text {
   display: flex;
   flex-direction: column;
-
-  margin-top: 30px;
+  max-width: 600px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 #om_øko img {
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 300px;
+  max-height: 300px;
   margin: 30px;
   border-radius: 50%;
   box-shadow: 5px 5px 6.2px rgba(0, 0, 0, 0.022),
@@ -221,7 +265,7 @@ div #navbarNav {
 /* --------------CAROUSEL-------------- */
 
 .carousel-inner {
-  overflow: visible !important;
+  overflow-x: visible !important;
 }
 
 .carousel-item ul {
@@ -229,15 +273,15 @@ div #navbarNav {
   flex-direction: row;
   justify-content: space-evenly;
   list-style: none;
+  flex-wrap: wrap;
+  gap: 30px 30px;
 }
 
 .carousel-item li img {
   width: 200px;
-  height: 150px;
-  box-shadow: 5px 5px 6.2px rgba(0, 0, 0, 0.022),
-    8.6px 8.6px 12.3px rgba(0, 0, 0, 0.033),
-    10.7px 10.7px 18.3px rgba(0, 0, 0, 0.041),
-    11.7px 11.7px 24.7px rgba(0, 0, 0, 0.05);
+  height: 160px;
+  box-shadow: 0px 2px 6.2px grey;
+
   object-fit: cover;
   cursor: pointer;
 }
@@ -248,10 +292,12 @@ div #navbarNav {
 
 #insta_carousel {
   /* background-color: #beb097; */
-  padding-left: 200px;
-  padding-right: 200px;
+  max-width: 1200px;
   padding-bottom: 100px;
   padding-top: 100px;
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 /* -------------FOOTER-------------- */

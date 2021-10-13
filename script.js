@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const divs = document.querySelectorAll("div");
+const divs = document.querySelectorAll("#hero");
 
 divs.forEach((div) => {
   const h2 = div.querySelectorAll("h2");
@@ -31,21 +31,27 @@ divs.forEach((div) => {
 const produktimg = document.querySelector("#produkt img");
 
 gsap
-  .timeline({
-    scrollTrigger: {
-      trigger: "#hero_text",
-      markers: true,
-      start: "top 20%",
-      end: "",
-      scrub: true,
-    },
-  })
+  .timeline({})
   .from(produktimg, {
     x: -1100,
     duration: 10,
     ease: "power1.out",
+    scrollTrigger: {
+      trigger: "#hero_text",
+      markers: true,
+      start: "top 90%",
+      end: "",
+      scrub: true,
+    },
   })
   .to(produktimg, {
+    scrollTrigger: {
+      trigger: "#faktabokse",
+      markers: true,
+      start: "top 90%",
+      end: "",
+      scrub: true,
+    },
     x: 1100,
     duration: 10,
     ease: "power1.out",
