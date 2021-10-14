@@ -27,7 +27,7 @@ use the fonts in other ways in the font hierarchy etc. */
   --white-space: 2rem;
 
   background-color: white;
-  cursor: url("images/gifel_cursor.png"), auto;
+  cursor: url("images/png/gifel_cursor.png"), auto;
 }
 
 main {
@@ -92,7 +92,7 @@ div #navbarNav {
 
 #hero {
   height: 46vw;
-  background-image: url(images/hero.jpg);
+  background-image: url(images/png/hero.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -210,18 +210,18 @@ div #navbarNav {
 }
 
 .dadler {
-  background-image: url(images/dadler.png);
+  background-image: url(images/png/dadler.png);
   background-size: cover;
   background-position: center;
 }
 
 .øko {
-  background-image: url(images/field.png);
+  background-image: url(images/png/field.png);
   background-size: cover;
 }
 
 .vegansk {
-  background-image: url(images/bark.png);
+  background-image: url(images/png/bark.png);
   background-size: cover;
 }
 
