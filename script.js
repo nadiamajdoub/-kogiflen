@@ -28,31 +28,33 @@ divs.forEach((div) => {
       duration: 2,
     });
 });
-const produktimg = document.querySelector("#produkt img");
+// const produktimg = document.querySelector("#produkt img");
 
-gsap
-  .timeline({})
-  .from(produktimg, {
-    x: -1100,
-    duration: 10,
-    ease: "power1.out",
+gsap.fromTo(
+  "#produkt img",
+  { x: -innerWidth },
+  {
+    x: innerWidth,
+    duration: 2,
+    ease: "none",
     scrollTrigger: {
-      trigger: "#hero_text",
-      // markers: true,
-      start: "top 90%",
-      end: "",
-      scrub: true,
+      trigger: "#produkt",
+      markers: true,
+      start: "top-=100 75%",
+      end: "bottom+=100 25%",
+      scrub: 1,
     },
-  })
-  .to(produktimg, {
-    scrollTrigger: {
-      trigger: "#faktabokse",
-      // markers: true,
-      start: "top 90%",
-      end: "",
-      scrub: true,
-    },
-    x: 1100,
-    duration: 10,
-    ease: "power1.out",
-  });
+  }
+);
+// .to(produktimg, {
+//   scrollTrigger: {
+//     trigger: "#faktabokse",
+//     // markers: true,
+//     start: "top 90%",
+//     end: "",
+//     scrub: true,
+//   },
+//   x: innerWidth,
+//   duration: 10,
+//   ease: "power1.out",
+// });
