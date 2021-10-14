@@ -11,7 +11,7 @@ divs.forEach((div) => {
     .timeline({
       scrollTrigger: {
         trigger: div,
-        markers: true,
+        // markers: true,
         start: "top 10%",
         end: "bottom 90%",
         scrub: true,
@@ -38,7 +38,7 @@ gsap
     ease: "power1.out",
     scrollTrigger: {
       trigger: "#hero_text",
-      markers: true,
+      // markers: true,
       start: "top 90%",
       end: "",
       scrub: true,
@@ -47,7 +47,7 @@ gsap
   .to(produktimg, {
     scrollTrigger: {
       trigger: "#faktabokse",
-      markers: true,
+      // markers: true,
       start: "top 90%",
       end: "",
       scrub: true,
