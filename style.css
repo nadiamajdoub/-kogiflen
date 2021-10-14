@@ -92,7 +92,7 @@ div #navbarNav {
 
 #hero {
   height: 46vw;
-  background-image: url(images/png/hero.png);
+  background-image: url(images/jpg/hero.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -210,18 +210,18 @@ div #navbarNav {
 }
 
 .dadler {
-  background-image: url(images/png/dadler.png);
+  background-image: url(images/jpg/dadler.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .øko {
-  background-image: url(images/png/field.png);
+  background-image: url(images/jpg/field.jpg);
   background-size: cover;
 }
 
 .vegansk {
-  background-image: url(images/png/bark.png);
+  background-image: url(images/jpg/bark.png);
   background-size: cover;
 }
 
