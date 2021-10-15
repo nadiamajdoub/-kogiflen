@@ -39,7 +39,7 @@ gsap.fromTo(
     ease: "none",
     scrollTrigger: {
       trigger: "#produkt",
-      markers: true,
+      // markers: true,
       start: "top-=100 75%",
       end: "bottom+=100 25%",
       scrub: 1,
